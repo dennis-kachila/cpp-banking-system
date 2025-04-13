@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -22,5 +21,28 @@ jobs:
       run: |
         g++ -std=c++17 -o bank_app main.cpp Account.cpp Transaction.cpp Bank.cpp
 
-    - name: Run tests
-      run: ./bank_app
+    - name: Run automated tests
+      run: |
+        # Test 1: Create Account
+        echo -e "1\nTEST001\nTest User\n1000\nSavings\n8" | ./bank_app
+        
+        # Test 2: Deposit
+        echo -e "1\nTEST002\nTest User\n1000\nSavings\n2\nTEST002\n500\n8" | ./bank_app
+        
+        # Test 3: Withdraw
+        echo -e "1\nTEST003\nTest User\n1000\nSavings\n3\nTEST003\n200\n8" | ./bank_app
+        
+        # Test 4: Transfer
+        echo -e "1\nTEST004A\nSender\n1000\nSavings\n1\nTEST004B\nReceiver\n500\nSavings\n4\nTEST004A\nTEST004B\n300\n8" | ./bank_app
+        
+        # Test 5: View All Accounts
+        echo -e "1\nTEST005\nTest User\n1000\nSavings\n5\n8" | ./bank_app
+        
+        # Test 6: View Transaction History
+        echo -e "1\nTEST006\nTest User\n1000\nSavings\n2\nTEST006\n500\n6\n8" | ./bank_app
+        
+        # Test 7: View Account Transactions
+        echo -e "1\nTEST007\nTest User\n1000\nSavings\n2\nTEST007\n500\n7\nTEST007\n8" | ./bank_app
+        
+        # Test 8: Exit
+        echo -e "8" | ./bank_app
