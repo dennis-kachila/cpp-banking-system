@@ -1,6 +1,6 @@
 # Console-Based Banking System in C++
 
-A console-based banking system implemented in C++ that demonstrates object-oriented programming principles
+A console-based banking system implemented in C++ that demonstrates object-oriented programming principles and file I/O operations.
 
 ## Features
 
@@ -52,10 +52,17 @@ Enter amount to deposit: 500
 
 ## File Structure
 
-- `Account.h`/`.cpp`: Account class implementation
-- `Transaction.h`/`.cpp`: Transaction class implementation  
-- `Bank.h`/`.cpp`: Main banking system logic
-- `main.cpp`: Program entry point and user interface
+```
+cpp-banking-system/
+├── Account.cpp
+├── Account.h
+├── Bank.cpp
+├── Bank.h
+├── main.cpp
+├── README.md
+├── Transaction.cpp
+└── Transaction.h
+```
 
 ## Requirements
 
