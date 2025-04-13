@@ -47,3 +47,6 @@ public:
     bool withdraw(double amount); ///< Removes funds from account
     void display() const;         ///< Shows account details
 };
+
+
+//end
