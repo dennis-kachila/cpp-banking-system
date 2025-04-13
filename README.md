@@ -1,6 +1,6 @@
 # Console-Based Banking System in C++
 
-A console-based banking system implemented in C++ that demonstrates object-oriented programming principles and file I/O operations.
+A console-based banking system implemented in C++ that demonstrates object-oriented programming principles.
 
 ## Features
 
