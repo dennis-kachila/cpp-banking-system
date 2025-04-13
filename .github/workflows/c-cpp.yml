@@ -23,9 +23,9 @@ jobs:
 
     - name: Create expected output files
       run: |
-        echo -e "=== Banking System Menu ===\n1. Create Account\n2. Deposit\n3. Withdraw\n4. Transfer\n5. View All Accounts\n6. View Transaction History\n7. View Account Transactions\n8. Exit\nEnter choice: Account created successfully!\n=== Banking System Menu ===\n1. Create Account\n2. Deposit\n3. Withdraw\n4. Transfer\n5. View All Accounts\n6. View Transaction History\n7. View Account Transactions\n8. Exit\nEnter choice: " > expected_output_test1.txt
+        echo -e "=== OneTrue Banking System Menu ===\n1. Create Account\n2. Deposit\n3. Withdraw\n4. Transfer\n5. View All Accounts\n6. View Transaction History\n7. View Account Transactions\n8. Exit\nEnter choice: Account created successfully!\n=== OneTrue Banking System Menu ===\n1. Create Account\n2. Deposit\n3. Withdraw\n4. Transfer\n5. View All Accounts\n6. View Transaction History\n7. View Account Transactions\n8. Exit\nEnter choice: " > expected_output_test1.txt
         
-        echo -e "=== Banking System Menu ===\n1. Create Account\n2. Deposit\n3. Withdraw\n4. Transfer\n5. View All Accounts\n6. View Transaction History\n7. View Account Transactions\n8. Exit\nEnter choice: Deposit successful!\n=== Banking System Menu ===\n1. Create Account\n2. Deposit\n3. Withdraw\n4. Transfer\n5. View All Accounts\n6. View Transaction History\n7. View Account Transactions\n8. Exit\nEnter choice: " > expected_output_test2.txt
+        echo -e "=== OneTrue Banking System Menu ===\n1. Create Account\n2. Deposit\n3. Withdraw\n4. Transfer\n5. View All Accounts\n6. View Transaction History\n7. View Account Transactions\n8. Exit\nEnter choice: Deposit successful!\n=== OneTrue Banking System Menu ===\n1. Create Account\n2. Deposit\n3. Withdraw\n4. Transfer\n5. View All Accounts\n6. View Transaction History\n7. View Account Transactions\n8. Exit\nEnter choice: " > expected_output_test2.txt
 
     - name: Run tests with detailed logging
       run: |
